@@ -1,0 +1,230 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#home {
+    background-color: rgb(255, 255, 255);
+    color: rgb(47, 47, 47);
+    margin-top: 20px;
+    margin-right: 20;
+    margin-left: 20;
+    border-radius: 36px;
+    padding:  10px;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    margin: 0;
+    font-family: Helvetica;
+}
+
+.header{
+    background-color: rgb(255, 255, 255);
+    color: rgb(47, 47, 47);
+    margin-top: 20px;
+    margin-right: 20;
+    margin-left: 20;
+    border-radius: 36px;
+    text-align: center;
+    line-height: 0.1;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.020);
+}
+
+nav ul{
+    background-color: rgb(255, 255, 255);
+    list-style-type: none;
+    padding: 30px;
+    margin: 20px;
+    width: fit-content;
+    border-radius: 36px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+
+nav li a{
+    text-decoration:none;
+    color: rgb(57, 57, 57);
+    transition: all 0.3s;
+    border-radius: 36px;
+    display: flex;
+    width: fit-content;
+}
+
+nav li a:hover{
+    background-color: rgb(0, 122, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 36px;
+    padding: 5px;
+    margin: 5px 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.200);
+}
+
+/* Tombol (Buttons) */
+.btn {
+    font-size: 16px;
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.100);
+    color: rgb(40, 40, 40);
+    text-decoration: none;
+    border-radius: 36px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 5px 0px;
+}   
+
+.btn:hover {    
+    background-color: #007AFF;
+    color: #eaeaea;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.200);
+}
+
+.btn-tambah {
+    margin: 15px 0px 10px 30px;
+}
+.btn-hapus{
+    display: flex;
+    width: fit-content;
+    gap: 12px;
+}
+.btn-edit{
+    display: flex;
+    width: fit-content;
+    gap: 12px;
+}
+
+
+.btn-tambah:hover {    
+    background-color: rgb(0, 122, 255);
+    color: #eaeaea;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.200);
+    padding: 15px;
+}
+
+.btn-edit:hover {    
+    background-color: rgb(0, 122, 255);
+    color: #eaeaea;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.200);
+    padding: 15px;
+}
+.btn-hapus:hover {    
+    background-color: #ff0000;
+    color: #eaeaea;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.200);
+    padding: 15px;
+}
+.btn-batal:hover {    
+    background-color: #ff0000;
+    color: #eaeaea;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.200);
+}
+.daftar_buku {
+    margin-left: 30px;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    line-height: 0.2;
+    margin: 20px auto;
+    width: 80%;
+    overflow-x: auto;
+    border-radius: 36px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.020);
+    padding-bottom: 10px;
+}
+
+h1 {
+    color: rgb(57, 57, 57);
+    margin-top: 10;
+    margin-left: 15;
+}
+p {
+    color: rgb(57, 57, 57);
+    margin-top: 10;
+    margin-left: 15;
+    
+}
+
+.table {
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container::-webkit-scrollbar{
+    height: 30px;
+}
+.container::-webkit-scrollbar-track{
+    background: rgb(255, 255, 255);
+    border-radius: 32px;
+}
+.container::-webkit-scrollbar-thumb{
+    background: rgb(47, 47, 47) ;
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 32px;
+    
+}
+.container::-webkit-scrollbar-thumb:hover{
+    background: rgb(0, 122, 255);
+    border: 7px solid rgb(255, 255, 255);
+}
+
+.table th,
+.table td {
+    text-align: center;
+    border: 1px solid rgb(57, 57, 57);
+    font-size: 15px;
+    padding: 20px;
+    
+}
+
+.table th {
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+
+.footer {
+    background-color: rgb(255, 255, 255);
+    color: rgb(40, 40, 40);
+    text-align: center;
+    line-height: 0.1;
+    padding: 15px;
+    margin-top: 20px;
+    font-style: normal;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.020);
+}
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    font-size: small;
+    color: rgb(48, 48, 48);
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Agar width 100% tidak over */
+    font-family: Helvetica;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: rgb(0, 122, 255);
+    outline: none;
+}
