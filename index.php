@@ -12,31 +12,31 @@
         <h1>Selamat datang di Street Food Saparua</h1>
         <p>
             Halo, para pecinta kuliner jalanan!
-            Udah siap makan enak tanpa kantong bolong?
+            Udah siap kulineran enak tanpa kantong bolong?
             <br>
             <br>
-            Bawa teman, bawa keluarga, atau bawa badan laparmu—Saparua siap menyambut dengan senyum dan aroma sedap dari setiap panggangan.
+            Bawa teman-teman kalian, bawa keluarga, atau bawa perut aja, Saparua siap menyambut dengan aroma sedap dari setiap makanan.
             <br>
             <br>
-            Si Dia juga bisa di ajak ke sini lhooo...
-            Yuk Temuin selera makanan mu disini.
+            Si Dia juga bisa di ajak ke sini lho...
+            Yuk Temuin selera makan si dia dan kamu disini.
         </p>
     </section>
     <nav>
         <ul>
             <li><a href="index.php">Daftar UMKM</a></li>
-            <li><a href="kategori.php">Kategori</a></li>
+            <li><a href="search_harga.php">Search Harga</a></li>
         </ul>
     </nav>
 
 <!-- ini bagian daftar makanan nya-->
-    <section id="daftar_buku">
+    <section id="daftar">
        </head>
        <body>
     
             <div class="container">
-            <h2 class="daftar_buku">Daftar UMKM</h2>
-            <p class="daftar_buku">Street Food Saparua</p>
+            <h2 class="daftar">Daftar UMKM</h2>
+            <p class="daftar">Street Food Saparua</p>
 
         <table class="table">
             <thead>
