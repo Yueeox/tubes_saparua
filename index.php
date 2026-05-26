@@ -22,12 +22,13 @@
             Yuk Temuin selera makanan mu disini.
         </p>
     </section>
-    <nav class="navbar">
-        <a class="active" href="index.php">Daftar UMKM</a>
-        <a href="tambah_umkm.php">Tambah Data</a>
-        <a href="kategori.php">Kelola Kategori</a>
-        <a href="#tentang">Tentang Aplikasi</a>
+    <nav>
+        <ul>
+            <li><a href="index.php">Daftar UMKM</a></li>
+            <li><a href="kategori.php">Kategori</a></li>
+        </ul>
     </nav>
+
 <!-- ini bagian daftar makanan nya-->
     <section id="daftar_buku">
        </head>
@@ -45,7 +46,7 @@
                     <th>Penjaga/Pemilik</th>
                     <th>Lokasi</th>
                     <th>Jam Buka</th>
-                    <th>Sertifikat Halal</th>
+                    <th>Menu</th>
                 </tr>
             </thead>
             <tbody>
@@ -60,8 +61,7 @@
                             umkm.nama_penjaga, 
                             lokasi.deskripsi AS lokasi,
                             jadwal.jam_buka,
-                            jadwal.jam_tutup,
-                            umkm.sertifikasi_halal
+                            jadwal.jam_tutup
                         FROM umkm
                         INNER JOIN lokasi ON umkm.id_lokasi = lokasi.id_lokasi
                         INNER JOIN jadwal ON umkm.id_jadwal = jadwal.id_jadwal";
@@ -77,7 +77,9 @@
                     <td><?= $row['nama_penjaga']; ?></td>
                     <td><?= $row['lokasi']; ?></td>
                     <td><?= $row['jam_buka']; ?> - <?= $row['jam_tutup']; ?></td>
-                    <td><?= $row['sertifikasi_halal']; ?></td>
+                    <td>
+                        <a href="menu.php?id=<?= $row['id_umkm']; ?>" class="btn">Menu</a>
+                    </td>
                 </tr>
                 <?php } ?>
             </tbody>
@@ -85,7 +87,7 @@
             </div>
             <div class="footer">
                 <section id="contact">
-                    <p>&copy;2026 Tokyo Libraly Foundation</p>
+                    <p>&copy;Stree Food Saparua Comunity</p>
                     <p>Wingko Prajna</p>
                 </section>
             </div>
@@ -96,5 +98,5 @@
     </html>
     
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
     </section>
