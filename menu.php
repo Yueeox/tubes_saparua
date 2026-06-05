@@ -17,7 +17,7 @@ if ($id_umkm <= 0) {
     $nama_stand = $data_umkm ? $data_umkm['nama_stand'] : 'Tidak Diketahui';
 
     // Ambil daftar menu dari UMKM tersebut
-    $query_menu = "SELECT nama_menu, harga_menu, jenis_menu, deskripsi 
+    $query_menu = "SELECT nama_menu, harga_menu, deskripsi 
         FROM menu WHERE id_umkm = $id_umkm ORDER BY nama_menu";
     $result_menu = mysqli_query($koneksi, $query_menu);
     
@@ -42,7 +42,7 @@ if ($id_umkm <= 0) {
                 <tr>
                     <th>No</th>
                     <th>Nama Menu</th>
-                    <th>Jenis</th>
+                    
                     <th>Harga</th>
                     <th>Deskripsi</th>
                 </tr>
@@ -58,7 +58,7 @@ if ($id_umkm <= 0) {
                         <tr>
                             <td><?= $no++; ?></td>
                             <td><?= ($row['nama_menu']); ?></td>
-                            <td><?= ($row['jenis_menu']); ?></td>
+                            
                             <td><?= $harga; ?></td>
                             <td><?= ($row['deskripsi']); ?></td>
                         </tr>

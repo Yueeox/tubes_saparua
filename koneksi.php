@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db   = "data_umkm_saparua";
+$db   = "data_umkm_saparua_new";
 
 $koneksi = mysqli_connect($host, $user, $pass, $db);
 

@@ -269,3 +269,161 @@ p.daftar_buku {
     background: #c6c6c8;
     border-radius: 10px;
 }
+
+.filter-section {
+    background: #f9f9fb;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 0.5px solid #e5e5ea;
+}
+
+.filter-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1c1c1e;
+}
+
+.filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.filter-item {
+    flex: 1;
+    min-width: 150px;
+}
+
+.filter-item label {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: #6c6c70;
+    margin-bottom: 5px;
+}
+
+.filter-item input, 
+.filter-item select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 0.5px solid #e5e5ea;
+    border-radius: 14px;
+    font-family: inherit;
+    background: white;
+    font-size: 14px;
+}
+
+.filter-item input:focus, 
+.filter-item select:focus {
+    outline: none;
+    border-color: #007aff;
+    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.btn-filter {
+    background: #007aff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.btn-filter:hover {
+    background: #005fc1;
+}
+
+.btn-reset {
+    background: #e5e5ea;
+    color: #1c1c1e;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s ease;
+}
+
+.btn-reset:hover {
+    background: #d4d4d8;
+}
+
+/* Badge untuk sertifikasi halal */
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.badge-halal {
+    background: #34c75920;
+    color: #228f3e;
+}
+
+.badge-nonhalal {
+    background: #ff3b3020;
+    color: #d70015;
+}
+
+/* Responsive untuk tablet */
+@media (max-width: 768px) {
+    .filter-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .filter-item {
+        width: 100%;
+    }
+    
+    .filter-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn-filter, .btn-reset {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .table th, .table td {
+        padding: 10px 8px;
+        font-size: 13px;
+    }
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    .table {
+        font-size: 12px;
+    }
+    
+    .btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
